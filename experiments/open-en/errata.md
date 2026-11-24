@@ -1,6 +1,6 @@
 # English instrument checks
 
-A scan after generation found exact English gold strings in five questions. IDs are QA20CAPR-0295 (iron), QA20CAPR-0347 (coral), QA20QBIK-0559 (cowboy), QA20QBIK-0599 (bobbin), and QA20QBIK-0989 (laissez-faire). A paired sensitivity analysis drops these from both languages, leaving 123 questions.
+A scan after generation found literal English answer names, ignoring disambiguators such as “(sewing)” in five questions. IDs are QA20CAPR-0295 (iron), QA20CAPR-0347 (coral), QA20QBIK-0559 (cowboy), QA20QBIK-0599 (bobbin), and QA20QBIK-0989 (laissez-faire). A paired sensitivity analysis drops these from both languages, leaving 123 questions.
 
 Three further reference problems became apparent when reading outputs. The corresponding 120-item analysis removes these three IDs from both languages as well. The immutable raw records retain what was actually shown. This is a diagnostic exclusion using information learned after data collection.
 
@@ -11,3 +11,5 @@ Three further reference problems became apparent when reading outputs. The corre
 | QA20QBIK-0839 | The Japanese title ある愛の詩 was translated literally as “A Certain Love Poem”. The conventional English title “Love Story” appears elsewhere in the option set. The Japanese source question itself also attributes the film to Arthur Miller. The credited director is Arthur Hiller. | [Paramount Japan](https://paramount.jp/search/detail.php?id=8306) |
 
 Kanji rebuses, titles and culturally specific names can remain unequal in difficulty across languages even after removing these eight items. The sensitivity checks do not establish that every remaining question is translation-equivalent.
+
+A further review flagged QA20QBIK-0381. The Japanese rebus replaces the four dots of 鳥 with 木 to form 梟. The English wording describes turning 鳥 itself into 木. The mini model objected to this premise in A and B, with closely related replies scored as vague and wrong. A [119-item sensitivity](../open-ja/followup.json) also excludes this ID from both languages. The 123- and 120-item analyses reflect the earlier stages of the errata.
