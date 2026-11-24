@@ -7,6 +7,11 @@ from collections import Counter,defaultdict
 from pathlib import Path
 import numpy as np
 BASE=Path(__file__).resolve().parents[1]
+NAME_OVERLAP = frozenset({
+    "QA20CAPR-0295", "QA20CAPR-0347", "QA20QBIK-0559", "QA20QBIK-0599", "QA20QBIK-0989",
+})
+REFERENCE_ISSUES = frozenset({"QA20CAPR-0683", "QA20CAPR-0897", "QA20QBIK-0839"})
+KANJI_ERRATUM = "QA20QBIK-0381"
 def lines(path):return [json.loads(l) for l in path.read_text().splitlines()]
 def csvout(path,rows):
     with path.open('w',newline='') as f:
@@ -110,6 +115,5 @@ if __name__=='__main__':
     langs=sys.argv[1:] or ['ja','en']
     main(langs)
     if len(langs)==2:
-        overlap={'QA20CAPR-0295','QA20CAPR-0347','QA20QBIK-0559','QA20QBIK-0599','QA20QBIK-0989'}
-        main(langs,overlap,'sensitivity-123.json')
-        main(langs,overlap | {'QA20CAPR-0683','QA20CAPR-0897','QA20QBIK-0839'},'sensitivity-120.json')
+        main(langs, NAME_OVERLAP, 'sensitivity-123.json')
+        main(langs, NAME_OVERLAP | REFERENCE_ISSUES, 'sensitivity-120.json')

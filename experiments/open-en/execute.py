@@ -10,8 +10,6 @@ import design
 from design import ROOT,SHARED
 sys.path.insert(1,str(SHARED))
 import run
-def spend(path):
-    return sum(r["delta"] for r in run.read(path/"ledger.jsonl"))
 async def translate():
     source=run.read(SHARED/"items.jsonl")
     folder=ROOT/"translation"
@@ -38,10 +36,10 @@ if __name__=="__main__":
     args=parser.parse_args()
     with (ROOT/".run.lock").open("a") as lock, (SHARED/".run.lock").open("a") as ja_lock:
         for f in [lock,ja_lock]:fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB)
-        run.BUDGET=8-spend(SHARED)
+        run.BUDGET=run.TOTAL_BUDGET-run.recorded_spend(SHARED)
         if args.mode=="translate":
-            run.BUDGET-=spend(ROOT)
+            run.BUDGET-=run.recorded_spend(ROOT)
             asyncio.run(translate())
         else:
-            run.BUDGET-=spend(ROOT/"translation")
+            run.BUDGET-=run.recorded_spend(ROOT/"translation")
             asyncio.run(run.main())
