@@ -10,8 +10,12 @@ import httpx
 from design import ROOT, MODELS, answer, grade_id, grading
 PRICES={MODELS["mini"]:(.40,.10,1.60),MODELS["full"]:(2,.50,8),MODELS["low"]:(2.50,.25,15)}
 BUDGET=5
+TOTAL_BUDGET=8
 def read(path):
     return [json.loads(x) for x in path.read_text().splitlines()] if path.exists() else []
+def recorded_spend(folder):
+    return sum(event["delta"] for event in read(folder / "ledger.jsonl"))
+
 def append(path,row):
     with path.open("a") as f:f.write(json.dumps(row,ensure_ascii=False,separators=(",",":"))+"\n")
 def unpack(raw):
@@ -29,7 +33,7 @@ class Runner:
         self.raw=ROOT/"responses.jsonl"
         self.events=ROOT/"ledger.jsonl"
         self.done={r["job"]:r for r in read(self.raw)}
-        self.balance=sum(e["delta"] for e in read(self.events))
+        self.balance=recorded_spend(ROOT)
     def record(self,key,kind,delta,**extra):
         append(self.events,dict(job=key,kind=kind,delta=delta,utc=datetime.now(timezone.utc).isoformat(),**extra))
         self.balance+=delta
@@ -94,4 +98,8 @@ async def main():
 if __name__=="__main__":
     with (ROOT/".run.lock").open("a") as lock:
         fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+        # The English runner takes this same lock before changing either ledger.
+        english = ROOT.parent / "open-en"
+        bilingual_remaining = TOTAL_BUDGET - recorded_spend(english) - recorded_spend(english / "translation")
+        BUDGET = min(BUDGET, bilingual_remaining)
         asyncio.run(main())
