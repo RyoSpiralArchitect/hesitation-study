@@ -38,7 +38,7 @@ if __name__=="__main__":
     args=parser.parse_args()
     with (ROOT/".run.lock").open("a") as lock, (SHARED/".run.lock").open("a") as ja_lock:
         for f in [lock,ja_lock]:fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB)
-        run.BUDGET=5-spend(SHARED)
+        run.BUDGET=8-spend(SHARED)
         if args.mode=="translate":
             run.BUDGET-=spend(ROOT)
             asyncio.run(translate())
