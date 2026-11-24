@@ -1,0 +1,16 @@
+{
+  "n_calls": 3840,
+  "n_replies": 6400,
+  "termination": {
+    "stop": 6400
+  },
+  "same_wrong": 220,
+  "same_wrong_probs": [
+    91.31818181818181,
+    80.54545454545455
+  ],
+  "newly_hedged": 132,
+  "audit_hedge_n": 80,
+  "audit_hedge_match": 79,
+  "audit_pause_match": 80
+}

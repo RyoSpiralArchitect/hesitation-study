@@ -83,5 +83,7 @@ if __name__=="__main__":
         out[mode]=interactions(jp,en)
         out[mode+"_translation_repair"]=interactions(jp,corrected(en))
     d=BASE/"experiments/en"
-    out["cost_USD"]={folder:sum(r["usd_delta"] for r in read_lines(d/folder/"requests.jsonl")) for folder in ["results","translation","correction"]}
+    ledgers={f:read_lines(d/f/"requests.jsonl") for f in ("results","translation","correction")}
+    out["cost_USD"]={f:sum(r.get("charge",0) for r in entries) for f,entries in ledgers.items()}
+    out["ledger_reserved_plus_settled_USD"]={f:sum(r["usd_delta"] for r in entries) for f,entries in ledgers.items()}
     (BASE/"comparison.json").write_text(json.dumps(out,indent=2)+"\n")

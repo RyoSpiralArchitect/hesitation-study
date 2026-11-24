@@ -18,7 +18,9 @@ python3 experiments/ja/code/analyze.py
 python3 experiments/ja/code/rescore.py score
 python3 experiments/en/code/analyze.py
 python3 experiments/en/code/rescore.py score
+python3 experiments/en/code/check.py
 python3 comparison.py
+python3 plot.py
 ```
 
 The committed raw responses are sufficient for all of these commands. The English translation, evaluation and one-item repair runners read OPENAI_API_KEY for live generation. The saved data allow offline reproduction with no API key. Use a separate checkout for a new stochastic run.
