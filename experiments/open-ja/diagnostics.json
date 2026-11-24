@@ -1,0 +1,103 @@
+{
+  "ja": {
+    "usage_USD": 3.5512582,
+    "ledger_USD": 3.5512582,
+    "charges_by_event": {
+      "reserve": 4086,
+      "settled": 4086
+    },
+    "grades": 1910,
+    "responses": 2176,
+    "judgment_audit": {
+      "correct->correct": 57,
+      "wrong->wrong": 5,
+      "vague->correct": 1,
+      "unresolved->correct": 1
+    },
+    "items_checked": 64,
+    "supplemental_reviews": 50,
+    "rescored": {
+      "openA": {
+        "correct": 106,
+        "wrong": 21,
+        "vague": 1
+      },
+      "openB": {
+        "correct": 102,
+        "wrong": 23,
+        "vague": 3
+      }
+    },
+    "lexical_pauses": {
+      "openA": 0,
+      "openB": 8,
+      "openF": 74,
+      "editB": 3,
+      "editF": 38
+    },
+    "reasoning_usage": {
+      "none": {
+        "n": 384,
+        "with_reasoning_tokens": 0,
+        "total": 0
+      },
+      "low": {
+        "n": 384,
+        "with_reasoning_tokens": 320,
+        "total": 14411
+      }
+    }
+  },
+  "en": {
+    "usage_USD": 3.4675094,
+    "ledger_USD": 3.4675094,
+    "charges_by_event": {
+      "reserve": 4123,
+      "settled": 4123
+    },
+    "grades": 1947,
+    "responses": 2176,
+    "judgment_audit": {
+      "correct->correct": 58,
+      "vague->correct": 2,
+      "wrong->wrong": 3,
+      "correct->wrong": 1
+    },
+    "items_checked": 64,
+    "supplemental_reviews": 53,
+    "rescored": {
+      "openA": {
+        "correct": 100,
+        "wrong": 22,
+        "unresolved": 3,
+        "vague": 3
+      },
+      "openB": {
+        "correct": 104,
+        "wrong": 22,
+        "unresolved": 1,
+        "vague": 1
+      }
+    },
+    "lexical_pauses": {
+      "openA": 0,
+      "openB": 2,
+      "openF": 4,
+      "editB": 1,
+      "editF": 1
+    },
+    "reasoning_usage": {
+      "none": {
+        "n": 384,
+        "with_reasoning_tokens": 0,
+        "total": 0
+      },
+      "low": {
+        "n": 384,
+        "with_reasoning_tokens": 317,
+        "total": 18987
+      }
+    }
+  },
+  "translation_USD": 0.0201552
+}

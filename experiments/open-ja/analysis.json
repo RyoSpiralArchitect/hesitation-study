@@ -1,0 +1,1330 @@
+{
+  "ja": {
+    "counts": {
+      "mini/openA": {
+        "n": 128,
+        "correct": 106,
+        "wrong": 21,
+        "vague": 1,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 0,
+        "hedge": 0,
+        "pause": 0,
+        "extra": 12,
+        "error_given_specific": 0.16535433070866143
+      },
+      "mini/openB": {
+        "n": 128,
+        "correct": 100,
+        "wrong": 26,
+        "vague": 2,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 25,
+        "correct_hedged": 91,
+        "hedge": 118,
+        "pause": 6,
+        "extra": 35,
+        "error_given_specific": 0.20634920634920634
+      },
+      "mini/openC": {
+        "n": 128,
+        "correct": 104,
+        "wrong": 23,
+        "vague": 1,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 3,
+        "correct_hedged": 1,
+        "hedge": 4,
+        "pause": 0,
+        "extra": 10,
+        "error_given_specific": 0.18110236220472442
+      },
+      "mini/openF": {
+        "n": 128,
+        "correct": 101,
+        "wrong": 27,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 27,
+        "correct_hedged": 101,
+        "hedge": 128,
+        "pause": 70,
+        "extra": 5,
+        "error_given_specific": 0.2109375
+      },
+      "mini/mcA": {
+        "n": 128,
+        "correct": 127,
+        "wrong": 1,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 0,
+        "hedge": 0,
+        "pause": 0,
+        "extra": 7,
+        "error_given_specific": 0.0078125
+      },
+      "mini/mcB": {
+        "n": 128,
+        "correct": 124,
+        "wrong": 4,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 3,
+        "correct_hedged": 117,
+        "hedge": 120,
+        "pause": 1,
+        "extra": 23,
+        "error_given_specific": 0.03125
+      },
+      "mini/editB": {
+        "n": 128,
+        "correct": 104,
+        "wrong": 22,
+        "vague": 2,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 11,
+        "correct_hedged": 80,
+        "hedge": 92,
+        "pause": 4,
+        "extra": 20,
+        "error_given_specific": 0.1746031746031746
+      },
+      "mini/editF": {
+        "n": 128,
+        "correct": 103,
+        "wrong": 22,
+        "vague": 3,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 19,
+        "correct_hedged": 100,
+        "hedge": 121,
+        "pause": 32,
+        "extra": 16,
+        "error_given_specific": 0.176
+      },
+      "full/openA": {
+        "n": 128,
+        "correct": 119,
+        "wrong": 9,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 0,
+        "hedge": 0,
+        "pause": 0,
+        "extra": 14,
+        "error_given_specific": 0.0703125
+      },
+      "full/openB": {
+        "n": 128,
+        "correct": 118,
+        "wrong": 10,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 9,
+        "correct_hedged": 116,
+        "hedge": 125,
+        "pause": 71,
+        "extra": 7,
+        "error_given_specific": 0.078125
+      },
+      "full/openC": {
+        "n": 128,
+        "correct": 118,
+        "wrong": 10,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 3,
+        "hedge": 3,
+        "pause": 0,
+        "extra": 7,
+        "error_given_specific": 0.078125
+      },
+      "none/openA": {
+        "n": 128,
+        "correct": 127,
+        "wrong": 1,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 0,
+        "hedge": 0,
+        "pause": 0,
+        "extra": 93,
+        "error_given_specific": 0.0078125
+      },
+      "none/openB": {
+        "n": 128,
+        "correct": 126,
+        "wrong": 2,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 1,
+        "correct_hedged": 113,
+        "hedge": 114,
+        "pause": 0,
+        "extra": 102,
+        "error_given_specific": 0.015625
+      },
+      "none/openC": {
+        "n": 128,
+        "correct": 124,
+        "wrong": 4,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 1,
+        "hedge": 1,
+        "pause": 0,
+        "extra": 71,
+        "error_given_specific": 0.03125
+      },
+      "low/openA": {
+        "n": 128,
+        "correct": 128,
+        "wrong": 0,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 0,
+        "hedge": 0,
+        "pause": 0,
+        "extra": 73,
+        "error_given_specific": 0.0
+      },
+      "low/openB": {
+        "n": 128,
+        "correct": 128,
+        "wrong": 0,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 120,
+        "hedge": 120,
+        "pause": 0,
+        "extra": 106,
+        "error_given_specific": 0.0
+      },
+      "low/openC": {
+        "n": 128,
+        "correct": 127,
+        "wrong": 1,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 1,
+        "hedge": 1,
+        "pause": 0,
+        "extra": 50,
+        "error_given_specific": 0.0078125
+      }
+    },
+    "effects": {
+      "mini/open_B-A/error": [
+        0.0390625,
+        -0.0234375,
+        0.1015625,
+        10000
+      ],
+      "mini/open_B-A/correct": [
+        -0.046875,
+        -0.1171875,
+        0.0234375,
+        10000
+      ],
+      "mini/open_B-A/hedge": [
+        0.921875,
+        0.875,
+        0.96875,
+        10000
+      ],
+      "mini/A/selectivity": [
+        0.0,
+        0.0,
+        0.0,
+        10000
+      ],
+      "mini/C/selectivity": [
+        0.12081939799331104,
+        -0.009433962264150943,
+        0.2763748634543026,
+        10000
+      ],
+      "mini/C-A/selectivity": [
+        0.12081939799331104,
+        -0.009433962264150943,
+        0.2763748634543026,
+        10000
+      ],
+      "full/open_B-A/error": [
+        0.0078125,
+        -0.0390625,
+        0.0546875,
+        10000
+      ],
+      "full/open_B-A/correct": [
+        -0.0078125,
+        -0.0546875,
+        0.0390625,
+        10000
+      ],
+      "full/open_B-A/hedge": [
+        0.9765625,
+        0.9453125,
+        1.0,
+        10000
+      ],
+      "full/A/selectivity": [
+        0.0,
+        0.0,
+        0.0,
+        10000
+      ],
+      "full/C/selectivity": [
+        -0.025423728813559324,
+        -0.058333333333333334,
+        0.0,
+        10000
+      ],
+      "full/C-A/selectivity": [
+        -0.025423728813559324,
+        -0.058333333333333334,
+        0.0,
+        10000
+      ],
+      "none/open_B-A/error": [
+        0.0078125,
+        -0.015625,
+        0.0390625,
+        10000
+      ],
+      "none/open_B-A/correct": [
+        -0.0078125,
+        -0.0390625,
+        0.015625,
+        10000
+      ],
+      "none/open_B-A/hedge": [
+        0.890625,
+        0.8359375,
+        0.9375,
+        10000
+      ],
+      "none/A/selectivity": [
+        0.0,
+        0.0,
+        0.0,
+        6220
+      ],
+      "none/C/selectivity": [
+        -0.008064516129032258,
+        -0.02459016393442623,
+        0.0,
+        9819
+      ],
+      "none/C-A/selectivity": [
+        -0.008064516129032258,
+        -0.02459016393442623,
+        0.0,
+        6220
+      ],
+      "low/open_B-A/error": [
+        0.0,
+        0.0,
+        0.0,
+        10000
+      ],
+      "low/open_B-A/correct": [
+        0.0,
+        0.0,
+        0.0,
+        10000
+      ],
+      "low/open_B-A/hedge": [
+        0.9375,
+        0.890625,
+        0.9765625,
+        10000
+      ],
+      "low/A/selectivity": [
+        null,
+        null,
+        null,
+        0
+      ],
+      "low/C/selectivity": [
+        -0.007874015748031496,
+        -0.023809523809523808,
+        0.0,
+        6240
+      ],
+      "low/C-A/selectivity": [
+        null,
+        null,
+        null,
+        0
+      ],
+      "reasoning_C_selectivity_interaction": [
+        null,
+        null,
+        null,
+        0
+      ],
+      "size_C_selectivity_interaction": [
+        -0.14624312680687035,
+        -0.3141952896834794,
+        -0.007425343018563357,
+        10000
+      ],
+      "mini/mc_B-A/error": [
+        0.0234375,
+        0.0,
+        0.0546875,
+        10000
+      ],
+      "format_interaction/error": [
+        0.015625,
+        -0.0546875,
+        0.0859375,
+        10000
+      ],
+      "mini/mc_B-A/correct": [
+        -0.0234375,
+        -0.0546875,
+        0.0,
+        10000
+      ],
+      "format_interaction/correct": [
+        -0.0234375,
+        -0.09375,
+        0.046875,
+        10000
+      ],
+      "initial_mandatory_minus_optional/pause": [
+        0.5,
+        0.4140625,
+        0.5859375,
+        10000
+      ],
+      "edit_mandatory_minus_optional/pause": [
+        0.21875,
+        0.140625,
+        0.296875,
+        10000
+      ],
+      "optional_edit_minus_initial/pause": [
+        -0.015625,
+        -0.0625,
+        0.03125,
+        10000
+      ],
+      "mandatory_edit_minus_initial/pause": [
+        -0.296875,
+        -0.4140625,
+        -0.1796875,
+        10000
+      ],
+      "interaction/pause": [
+        -0.28125,
+        -0.3984375,
+        -0.1640625,
+        10000
+      ],
+      "initial_mandatory_minus_optional/hedge": [
+        0.078125,
+        0.03125,
+        0.125,
+        10000
+      ],
+      "edit_mandatory_minus_optional/hedge": [
+        0.2265625,
+        0.1484375,
+        0.3046875,
+        10000
+      ],
+      "optional_edit_minus_initial/hedge": [
+        -0.203125,
+        -0.2890625,
+        -0.1171875,
+        10000
+      ],
+      "mandatory_edit_minus_initial/hedge": [
+        -0.0546875,
+        -0.09375,
+        -0.015625,
+        10000
+      ],
+      "interaction/hedge": [
+        0.1484375,
+        0.0625,
+        0.234375,
+        10000
+      ]
+    },
+    "transitions": {
+      "openB": {
+        "status": {
+          "correct->correct": 93,
+          "wrong->wrong": 14,
+          "correct->wrong": 12,
+          "wrong->correct": 6,
+          "correct->vague": 1,
+          "vague->correct": 1,
+          "wrong->vague": 1
+        },
+        "wrong_names": {
+          "same": 6,
+          "different": 8
+        }
+      },
+      "editB": {
+        "status": {
+          "correct->correct": 104,
+          "wrong->wrong": 20,
+          "vague->vague": 1,
+          "correct->wrong": 2,
+          "wrong->vague": 1
+        },
+        "wrong_names": {
+          "same": 17,
+          "different": 3
+        }
+      },
+      "editF": {
+        "status": {
+          "correct->correct": 103,
+          "wrong->wrong": 20,
+          "vague->vague": 1,
+          "wrong->vague": 1,
+          "correct->wrong": 2,
+          "correct->vague": 1
+        },
+        "wrong_names": {
+          "same": 17,
+          "different": 3
+        }
+      }
+    }
+  },
+  "en": {
+    "counts": {
+      "mini/openA": {
+        "n": 128,
+        "correct": 99,
+        "wrong": 27,
+        "vague": 2,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 0,
+        "hedge": 0,
+        "pause": 0,
+        "extra": 17,
+        "error_given_specific": 0.21428571428571427
+      },
+      "mini/openB": {
+        "n": 128,
+        "correct": 104,
+        "wrong": 24,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 15,
+        "correct_hedged": 30,
+        "hedge": 45,
+        "pause": 0,
+        "extra": 46,
+        "error_given_specific": 0.1875
+      },
+      "mini/openC": {
+        "n": 128,
+        "correct": 103,
+        "wrong": 23,
+        "vague": 2,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 0,
+        "hedge": 0,
+        "pause": 0,
+        "extra": 16,
+        "error_given_specific": 0.18253968253968253
+      },
+      "mini/openF": {
+        "n": 128,
+        "correct": 96,
+        "wrong": 30,
+        "vague": 2,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 19,
+        "correct_hedged": 44,
+        "hedge": 65,
+        "pause": 2,
+        "extra": 44,
+        "error_given_specific": 0.23809523809523808
+      },
+      "mini/mcA": {
+        "n": 128,
+        "correct": 119,
+        "wrong": 9,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 0,
+        "hedge": 0,
+        "pause": 0,
+        "extra": 8,
+        "error_given_specific": 0.0703125
+      },
+      "mini/mcB": {
+        "n": 128,
+        "correct": 122,
+        "wrong": 6,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 3,
+        "correct_hedged": 58,
+        "hedge": 61,
+        "pause": 0,
+        "extra": 17,
+        "error_given_specific": 0.046875
+      },
+      "mini/editB": {
+        "n": 128,
+        "correct": 100,
+        "wrong": 27,
+        "vague": 1,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 18,
+        "correct_hedged": 51,
+        "hedge": 69,
+        "pause": 0,
+        "extra": 27,
+        "error_given_specific": 0.2125984251968504
+      },
+      "mini/editF": {
+        "n": 128,
+        "correct": 101,
+        "wrong": 25,
+        "vague": 2,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 20,
+        "correct_hedged": 77,
+        "hedge": 98,
+        "pause": 1,
+        "extra": 27,
+        "error_given_specific": 0.1984126984126984
+      },
+      "full/openA": {
+        "n": 128,
+        "correct": 114,
+        "wrong": 13,
+        "vague": 1,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 0,
+        "hedge": 0,
+        "pause": 0,
+        "extra": 10,
+        "error_given_specific": 0.10236220472440945
+      },
+      "full/openB": {
+        "n": 128,
+        "correct": 113,
+        "wrong": 15,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 11,
+        "correct_hedged": 82,
+        "hedge": 93,
+        "pause": 11,
+        "extra": 30,
+        "error_given_specific": 0.1171875
+      },
+      "full/openC": {
+        "n": 128,
+        "correct": 114,
+        "wrong": 14,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 1,
+        "correct_hedged": 2,
+        "hedge": 3,
+        "pause": 0,
+        "extra": 15,
+        "error_given_specific": 0.109375
+      },
+      "none/openA": {
+        "n": 128,
+        "correct": 115,
+        "wrong": 13,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 0,
+        "hedge": 0,
+        "pause": 0,
+        "extra": 41,
+        "error_given_specific": 0.1015625
+      },
+      "none/openB": {
+        "n": 128,
+        "correct": 114,
+        "wrong": 13,
+        "vague": 1,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 6,
+        "correct_hedged": 37,
+        "hedge": 43,
+        "pause": 0,
+        "extra": 59,
+        "error_given_specific": 0.10236220472440945
+      },
+      "none/openC": {
+        "n": 128,
+        "correct": 116,
+        "wrong": 12,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 2,
+        "hedge": 2,
+        "pause": 0,
+        "extra": 23,
+        "error_given_specific": 0.09375
+      },
+      "low/openA": {
+        "n": 128,
+        "correct": 121,
+        "wrong": 7,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 0,
+        "hedge": 0,
+        "pause": 0,
+        "extra": 54,
+        "error_given_specific": 0.0546875
+      },
+      "low/openB": {
+        "n": 128,
+        "correct": 116,
+        "wrong": 11,
+        "vague": 1,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 8,
+        "correct_hedged": 42,
+        "hedge": 50,
+        "pause": 0,
+        "extra": 60,
+        "error_given_specific": 0.08661417322834646
+      },
+      "low/openC": {
+        "n": 128,
+        "correct": 119,
+        "wrong": 9,
+        "vague": 0,
+        "abstain": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "wrong_hedged": 0,
+        "correct_hedged": 1,
+        "hedge": 1,
+        "pause": 0,
+        "extra": 33,
+        "error_given_specific": 0.0703125
+      }
+    },
+    "effects": {
+      "mini/open_B-A/error": [
+        -0.0234375,
+        -0.078125,
+        0.0234375,
+        10000
+      ],
+      "mini/open_B-A/correct": [
+        0.0390625,
+        -0.0078125,
+        0.0859375,
+        10000
+      ],
+      "mini/open_B-A/hedge": [
+        0.3515625,
+        0.265625,
+        0.4375,
+        10000
+      ],
+      "mini/A/selectivity": [
+        0.0,
+        0.0,
+        0.0,
+        10000
+      ],
+      "mini/C/selectivity": [
+        0.0,
+        0.0,
+        0.0,
+        10000
+      ],
+      "mini/C-A/selectivity": [
+        0.0,
+        0.0,
+        0.0,
+        10000
+      ],
+      "full/open_B-A/error": [
+        0.015625,
+        -0.0234375,
+        0.0546875,
+        10000
+      ],
+      "full/open_B-A/correct": [
+        -0.0078125,
+        -0.0390625,
+        0.0234375,
+        10000
+      ],
+      "full/open_B-A/hedge": [
+        0.7265625,
+        0.6484375,
+        0.796875,
+        10000
+      ],
+      "full/A/selectivity": [
+        0.0,
+        0.0,
+        0.0,
+        10000
+      ],
+      "full/C/selectivity": [
+        0.05388471177944862,
+        -0.03571428571428571,
+        0.22413793103448276,
+        10000
+      ],
+      "full/C-A/selectivity": [
+        0.05388471177944862,
+        -0.03571428571428571,
+        0.22413793103448276,
+        10000
+      ],
+      "none/open_B-A/error": [
+        0.0,
+        -0.0390625,
+        0.0390625,
+        10000
+      ],
+      "none/open_B-A/correct": [
+        -0.0078125,
+        -0.046875,
+        0.03125,
+        10000
+      ],
+      "none/open_B-A/hedge": [
+        0.3359375,
+        0.2578125,
+        0.421875,
+        10000
+      ],
+      "none/A/selectivity": [
+        0.0,
+        0.0,
+        0.0,
+        10000
+      ],
+      "none/C/selectivity": [
+        -0.017241379310344827,
+        -0.04348779557589625,
+        0.0,
+        10000
+      ],
+      "none/C-A/selectivity": [
+        -0.017241379310344827,
+        -0.04348779557589625,
+        0.0,
+        10000
+      ],
+      "low/open_B-A/error": [
+        0.03125,
+        0.0,
+        0.0703125,
+        10000
+      ],
+      "low/open_B-A/correct": [
+        -0.0390625,
+        -0.078125,
+        -0.0078125,
+        10000
+      ],
+      "low/open_B-A/hedge": [
+        0.390625,
+        0.3046875,
+        0.4765625,
+        10000
+      ],
+      "low/A/selectivity": [
+        0.0,
+        0.0,
+        0.0,
+        9993
+      ],
+      "low/C/selectivity": [
+        -0.008403361344537815,
+        -0.02586206896551724,
+        0.0,
+        10000
+      ],
+      "low/C-A/selectivity": [
+        -0.008403361344537815,
+        -0.02586206896551724,
+        0.0,
+        9993
+      ],
+      "reasoning_C_selectivity_interaction": [
+        0.008838017965807013,
+        0.0,
+        0.027201508777020163,
+        9993
+      ],
+      "size_C_selectivity_interaction": [
+        0.05388471177944862,
+        -0.03571428571428571,
+        0.22413793103448276,
+        10000
+      ],
+      "mini/mc_B-A/error": [
+        -0.0234375,
+        -0.0625,
+        0.015625,
+        10000
+      ],
+      "format_interaction/error": [
+        0.0,
+        -0.0625,
+        0.0625,
+        10000
+      ],
+      "mini/mc_B-A/correct": [
+        0.0234375,
+        -0.015625,
+        0.0625,
+        10000
+      ],
+      "format_interaction/correct": [
+        0.015625,
+        -0.0390625,
+        0.078125,
+        10000
+      ],
+      "initial_mandatory_minus_optional/pause": [
+        0.015625,
+        0.0,
+        0.0390625,
+        10000
+      ],
+      "edit_mandatory_minus_optional/pause": [
+        0.0078125,
+        0.0,
+        0.0234375,
+        10000
+      ],
+      "optional_edit_minus_initial/pause": [
+        0.0,
+        0.0,
+        0.0,
+        10000
+      ],
+      "mandatory_edit_minus_initial/pause": [
+        -0.0078125,
+        -0.0234375,
+        0.0,
+        10000
+      ],
+      "interaction/pause": [
+        -0.0078125,
+        -0.0234375,
+        0.0,
+        10000
+      ],
+      "initial_mandatory_minus_optional/hedge": [
+        0.15625,
+        0.0546875,
+        0.2578125,
+        10000
+      ],
+      "edit_mandatory_minus_optional/hedge": [
+        0.2265625,
+        0.1328125,
+        0.3203125,
+        10000
+      ],
+      "optional_edit_minus_initial/hedge": [
+        0.1875,
+        0.0703125,
+        0.296875,
+        10000
+      ],
+      "mandatory_edit_minus_initial/hedge": [
+        0.2578125,
+        0.15625,
+        0.359375,
+        10000
+      ],
+      "interaction/hedge": [
+        0.0703125,
+        -0.0625,
+        0.203125,
+        10000
+      ]
+    },
+    "transitions": {
+      "openB": {
+        "status": {
+          "correct->correct": 97,
+          "wrong->wrong": 20,
+          "vague->wrong": 2,
+          "wrong->correct": 7,
+          "correct->wrong": 2
+        },
+        "wrong_names": {
+          "different": 17,
+          "same": 3
+        }
+      },
+      "editB": {
+        "status": {
+          "correct->correct": 99,
+          "wrong->wrong": 26,
+          "vague->vague": 1,
+          "vague->wrong": 1,
+          "wrong->correct": 1
+        },
+        "wrong_names": {
+          "same": 19,
+          "different": 7
+        }
+      },
+      "editF": {
+        "status": {
+          "correct->correct": 99,
+          "wrong->wrong": 25,
+          "vague->vague": 2,
+          "wrong->correct": 2
+        },
+        "wrong_names": {
+          "same": 15,
+          "different": 10
+        }
+      }
+    }
+  },
+  "en_minus_ja": {
+    "mini/open_B-A/error": [
+      -0.0625,
+      -0.140625,
+      0.0234375,
+      10000
+    ],
+    "mini/open_B-A/correct": [
+      0.0859375,
+      0.0078125,
+      0.1640625,
+      10000
+    ],
+    "mini/open_B-A/hedge": [
+      -0.5703125,
+      -0.65625,
+      -0.484375,
+      10000
+    ],
+    "mini/A/selectivity": [
+      0.0,
+      0.0,
+      0.0,
+      10000
+    ],
+    "mini/C/selectivity": [
+      -0.12081939799331104,
+      -0.2763748634543027,
+      0.009433962264150943,
+      10000
+    ],
+    "mini/C-A/selectivity": [
+      -0.12081939799331104,
+      -0.2763748634543027,
+      0.009433962264150943,
+      10000
+    ],
+    "full/open_B-A/error": [
+      0.0078125,
+      -0.046875,
+      0.0625,
+      10000
+    ],
+    "full/open_B-A/correct": [
+      0.0,
+      -0.0546875,
+      0.0546875,
+      10000
+    ],
+    "full/open_B-A/hedge": [
+      -0.25,
+      -0.328125,
+      -0.171875,
+      10000
+    ],
+    "full/A/selectivity": [
+      0.0,
+      0.0,
+      0.0,
+      10000
+    ],
+    "full/C/selectivity": [
+      0.07930844059300794,
+      -0.018304682203778008,
+      0.24830241234424802,
+      10000
+    ],
+    "full/C-A/selectivity": [
+      0.07930844059300794,
+      -0.018304682203778008,
+      0.24830241234424802,
+      10000
+    ],
+    "none/open_B-A/error": [
+      -0.0078125,
+      -0.0546875,
+      0.0390625,
+      10000
+    ],
+    "none/open_B-A/correct": [
+      0.0,
+      -0.046875,
+      0.046875,
+      10000
+    ],
+    "none/open_B-A/hedge": [
+      -0.5546875,
+      -0.6484375,
+      -0.4609375,
+      10000
+    ],
+    "none/A/selectivity": [
+      0.0,
+      0.0,
+      0.0,
+      6220
+    ],
+    "none/C/selectivity": [
+      -0.00917686318131257,
+      -0.04132231404958678,
+      0.016260162601626018,
+      9819
+    ],
+    "none/C-A/selectivity": [
+      -0.00917686318131257,
+      -0.040825336532053835,
+      0.016260162601626018,
+      6220
+    ],
+    "low/open_B-A/error": [
+      0.03125,
+      0.0,
+      0.0703125,
+      10000
+    ],
+    "low/open_B-A/correct": [
+      -0.0390625,
+      -0.078125,
+      -0.0078125,
+      10000
+    ],
+    "low/open_B-A/hedge": [
+      -0.546875,
+      -0.6328125,
+      -0.453125,
+      10000
+    ],
+    "low/A/selectivity": [
+      null,
+      null,
+      null,
+      0
+    ],
+    "low/C/selectivity": [
+      -0.0005293455965063188,
+      -0.024793388429752067,
+      0.023622047244094488,
+      6240
+    ],
+    "low/C-A/selectivity": [
+      null,
+      null,
+      null,
+      0
+    ],
+    "reasoning_C_selectivity_interaction": [
+      null,
+      null,
+      null,
+      0
+    ],
+    "size_C_selectivity_interaction": [
+      0.20012783858631897,
+      0.017831395993528436,
+      0.4369950740079,
+      10000
+    ],
+    "mini/mc_B-A/error": [
+      -0.046875,
+      -0.09375,
+      0.0,
+      10000
+    ],
+    "format_interaction/error": [
+      -0.015625,
+      -0.109375,
+      0.078125,
+      10000
+    ],
+    "mini/mc_B-A/correct": [
+      0.046875,
+      0.0,
+      0.09375,
+      10000
+    ],
+    "format_interaction/correct": [
+      0.0390625,
+      -0.046875,
+      0.1328125,
+      10000
+    ],
+    "initial_mandatory_minus_optional/pause": [
+      -0.484375,
+      -0.5703125,
+      -0.390625,
+      10000
+    ],
+    "edit_mandatory_minus_optional/pause": [
+      -0.2109375,
+      -0.2890625,
+      -0.1328125,
+      10000
+    ],
+    "optional_edit_minus_initial/pause": [
+      0.015625,
+      -0.03125,
+      0.0625,
+      10000
+    ],
+    "mandatory_edit_minus_initial/pause": [
+      0.2890625,
+      0.171875,
+      0.40625,
+      10000
+    ],
+    "interaction/pause": [
+      0.2734375,
+      0.1484375,
+      0.390625,
+      10000
+    ],
+    "initial_mandatory_minus_optional/hedge": [
+      0.078125,
+      -0.03125,
+      0.1796875,
+      10000
+    ],
+    "edit_mandatory_minus_optional/hedge": [
+      0.0,
+      -0.125,
+      0.125,
+      10000
+    ],
+    "optional_edit_minus_initial/hedge": [
+      0.390625,
+      0.2578125,
+      0.515625,
+      10000
+    ],
+    "mandatory_edit_minus_initial/hedge": [
+      0.3125,
+      0.203125,
+      0.421875,
+      10000
+    ],
+    "interaction/hedge": [
+      -0.078125,
+      -0.2265625,
+      0.0703125,
+      10000
+    ]
+  }
+}

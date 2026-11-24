@@ -8,11 +8,14 @@ To reproduce the results without network access, install the repository requirem
 
 ```sh
 python3 experiments/open-ja/analyze.py
+python3 experiments/open-ja/diagnostics.py
 python3 experiments/open-ja/figure.py
 ```
 
-The result arrays in analysis.json contain the observed proportion (or difference), lower and upper 95% item-bootstrap limits, and the number of finite resamples. The bootstrap preserves the English/Japanese, model, instruction, format and source/rewrite links of each item. Tables in the research note use percentage points. The correction for multiple comparisons is unspecified; interpret exploratory contrasts jointly with their event counts.
+The result arrays in analysis.json contain the observed proportion (or difference), lower and upper 95% item-bootstrap limits, and the number of finite resamples. The bootstrap preserves the English/Japanese, model, instruction, format and source/rewrite links of each item. Tables in the research note use percentage points. No multiplicity adjustment was applied; interpret exploratory contrasts jointly with their event counts.
 
 The official dev2 release is the input to sample.py. The original source and SHA-256 are documented in the repository NOTICE and sample.py. items.jsonl is the frozen selected set. responses.jsonl stores the original generations and blinded API judgments, distinguished by job key; ledger.jsonl stores the cost estimates. The separate audit CSV stores a second AI reading. Treat benchmark text and translated or quoted content under the original data terms.
 
 Primary scoring concerns the requested entity. The `extra` column flags additional checkable claims and does not certify or refute them. Bootstrap intervals represent variability across items in this sample, with one realization per cell. The study does not directly measure stable item-level response probabilities.
+
+Total successful API usage at the recorded standard rates was approximately USD 7.04, including both languages, translation and scoring. There were 4,352 response generations, 3,857 distinct grading requests and 128 translations. See diagnostics.json for language-specific accounting.

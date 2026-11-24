@@ -1,14 +1,16 @@
 # Hesitation Study
 
-同じ誤答でも、モデルはどこまで言い切るのか。日本語の四択640問とその英訳を使い、正答、言葉による留保、自己申告した正答確率を比較する。
+How does asking a language model to hesitate change what it says, the answer it chooses and the confidence it reports? We collect small, paired experiments in Japanese and English. Our primary record is a series of English research notes with Japanese summaries.
 
-[日本語実験](experiments/ja/report.md) · [英語追試と日英比較](REPORT.md) · [英語追試の計画](experiments/en/protocol.md)
+[Research notes](research-notes/README.md) · [Multiple-choice report in Japanese](REPORT.md) · [Data and protocols](experiments/)
 
-## Experimental design
+日本語と英語で同じ問いを出し、モデルが何を答え、どこまで言い切ったかを観察する研究です。各ノートの末尾に日本語要約を置いています。
+
+## Multiple-choice experiments
 
 Eight JMMLU subjects, 80 items per subject. Each model snapshot receives two samples in each condition. A is an ordinary answer, B requests hesitation, C asks for uncertainty only when uncertain, D requests an assertive answer. E rewrites each A utterance without seeing the question, options, gold or confidence. The Japanese archive is preserved byte-for-byte by file. English translations are aligned by item, choice index and original answer key.
 
-## Reproduce offline
+## Reproduce the multiple-choice results offline
 
 With Python 3.12, install the pinned dependencies and run from the repository root.
 
@@ -28,3 +30,5 @@ The committed raw responses are sufficient for all of these commands. The Englis
 ## License and attribution
 
 Original software is licensed under [Apache-2.0](LICENSE). The selected JMMLU benchmark data, English translations and benchmark excerpts are distributed under [CC BY-SA 4.0](experiments/en/data/LICENSE-JMMLU.txt). See [NOTICE](NOTICE) for source and attribution.
+
+The paired open-response wave uses a subset of the JAQKET development data (CC BY-SA 4.0). Its protocol, prompts and analysis are in [open-ja](experiments/open-ja/) and [open-en](experiments/open-en/).

@@ -54,23 +54,25 @@ def interval(vals):
     valid=vals[1:][np.isfinite(vals[1:])]
     lo,hi=np.quantile(valid,[.025,.975]) if len(valid) else (float('nan'),float('nan'))
     return [float(v) if np.isfinite(v) else None for v in (vals[0],lo,hi)]+[len(valid)]
-def main(langs):
+def main(langs,exclude=frozenset(),filename=None):
+    n=128-len(exclude)
     rng=np.random.default_rng(20261125)
-    w=np.vstack([np.ones(128,dtype=int),rng.multinomial(128,[1/128]*128,size=10000)]).astype(np.int32)
+    w=np.vstack([np.ones(n,dtype=int),rng.multinomial(n,[1/n]*n,size=10000)]).astype(np.int32)
     compiled={};anchor=None;result={}
     for lang in langs:
         rows=load(lang); groups=defaultdict(list)
-        for r in rows:groups[r['model'],r['arm']].append(r)
+        for r in rows:
+            if r["id"] not in exclude:groups[r['model'],r['arm']].append(r)
         metrics={}; counts={}
         for (cfg,a),rs in groups.items():
             ids=[r['id'] for r in rs]
             if anchor is None:anchor=ids
-            assert ids==anchor
+            assert ids==anchor and len(ids)==n
             counts[cfg+'/'+a]=aggregate(rs)
             m=np.array([[r['status']=='wrong',r['status']=='correct',r['hedge'],r['pause'],r['hedge']*(r['status']=='wrong'),r['hedge']*(r['status']=='correct')] for r in rs],dtype=np.int32)
             err,ok,hedge,pause,wh,ch=(w@m).T
             with np.errstate(invalid='ignore',divide='ignore'):
-                metrics[cfg,a]={'error':err/128,'correct':ok/128,'hedge':hedge/128,'pause':pause/128,'select':wh/err-ch/ok}
+                metrics[cfg,a]={'error':err/n,'correct':ok/n,'hedge':hedge/n,'pause':pause/n,'select':wh/err-ch/ok}
         effects={}
         for cfg in ['mini','full','none','low']:
             key=lambda arm,metric:metrics[cfg,arm][metric]
@@ -101,7 +103,13 @@ def main(langs):
     if len(langs)==2:
         result['en_minus_ja']={k:interval(compiled['en'][k]-v) for k,v in compiled['ja'].items()}
     dest=(BASE/'open-ja'/'analysis.json') if len(langs)==2 else BASE/'open-ja'/'ja-only.json'
+    if filename:dest=BASE/"open-ja"/filename
     dest.write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
 if __name__=='__main__':
     import sys
-    main(sys.argv[1:] or ['ja','en'])
+    langs=sys.argv[1:] or ['ja','en']
+    main(langs)
+    if len(langs)==2:
+        overlap={'QA20CAPR-0295','QA20CAPR-0347','QA20QBIK-0559','QA20QBIK-0599','QA20QBIK-0989'}
+        main(langs,overlap,'sensitivity-123.json')
+        main(langs,overlap | {'QA20CAPR-0683','QA20CAPR-0897','QA20QBIK-0839'},'sensitivity-120.json')
