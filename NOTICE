@@ -1,0 +1,10 @@
+Hesitation Study
+Copyright 2026 the Hesitation Study contributors.
+
+Original research software is licensed under Apache License 2.0.
+Japanese benchmark questions, answer choices and answer keys derive from
+JMMLU by Ziqi Yin, Hao Wang, Kaito Horio, Daisuke Kawahara and Satoshi Sekine.
+The selected source files and English adaptations are CC BY-SA 4.0.
+https://github.com/nlp-waseda/JMMLU/tree/762cbf192c9e4588b574d718f95afd64c96fcbf4
+See experiments/{ja,en}/data/LICENSE-JMMLU.txt. Treat benchmark excerpts
+in outputs, logs and reports under the same data terms.

@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-11-22T10:03:47.383925+00:00",
+  "subjects": {
+    "astronomy": {
+      "eligible": 147,
+      "source_sha256": "65457f82cd75a82de0c57cfe2933c535023ec7b26e254fd8c12dfd38a38bbbb4"
+    },
+    "conceptual_physics": {
+      "eligible": 148,
+      "source_sha256": "446e38c2b225d7417862bfe7ccb46a0e52af0279b51f832d2e6c8c34707a7bc4"
+    },
+    "high_school_statistics": {
+      "eligible": 150,
+      "source_sha256": "08781ef77cbddb07c22664ac9ac2707e93c83a42ba87e66d73483a80d75164d3"
+    },
+    "high_school_mathematics": {
+      "eligible": 149,
+      "source_sha256": "530acdf4799017fcd0b95f799041dcf80b713018a21a4b9f44518f81a604a234"
+    },
+    "japanese_history": {
+      "eligible": 150,
+      "source_sha256": "231e3dfe06db7dda37baf65b0ae2f54ccb843c6690138a317cd99ae9eb65afed"
+    },
+    "high_school_geography": {
+      "eligible": 150,
+      "source_sha256": "c6ebcb356f6fad1ea19194c787e460a7e0806093c904fedfdee0b560b8849f5f"
+    },
+    "sociology": {
+      "eligible": 150,
+      "source_sha256": "55092ab22dad8c80982fb84b7c6f6e2d33166ecefc0ab210e1b5c1ba8e74fcf9"
+    },
+    "philosophy": {
+      "eligible": 149,
+      "source_sha256": "e7fef1622d103d65ec9f9633f15ae8e884a67258a17645f2c54748252a11c4c9"
+    }
+  },
+  "data/manifest.jsonl": "57d720aaeebe32ab98affdb4537a5d04b60d930bf87ae5ad6aa3e181de62799a",
+  "code/design.py": "4c4f572cf0b61dc7d3451e47cb7f2dc664912afe25165b71bf885c48dfd2e3af",
+  "code/prepare.py": "8b79eba311b668bc142921ccfe97badc133d43079f76b13ee2114e4254dc03a5",
+  "protocol.md": "5a9f79a7eabe5271388dd179fbfdc89117de08989fe15d073be6432df32d113a"
+}

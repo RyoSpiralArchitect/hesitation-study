@@ -1,0 +1,68 @@
+{
+  "A-B": {
+    "n": 1280,
+    "both_valid": 1274,
+    "same_choice_or_abstain": 1150,
+    "same_wrong_letter": 222,
+    "same_wrong_letter_gained_hedge": 184,
+    "same_wrong_letter_lost_hedge": 0,
+    "same_wrong_letter_neither_hedged": 36,
+    "outcomes": {
+      "abstain_to_correct": 1,
+      "correct_to_correct": 928,
+      "correct_to_invalid": 1,
+      "correct_to_wrong": 42,
+      "wrong_to_abstain": 1,
+      "wrong_to_correct": 45,
+      "wrong_to_invalid": 5,
+      "wrong_to_wrong": 257
+    }
+  },
+  "A-C": {
+    "n": 1280,
+    "both_valid": 1280,
+    "same_choice_or_abstain": 1152,
+    "same_wrong_letter": 225,
+    "same_wrong_letter_gained_hedge": 4,
+    "same_wrong_letter_lost_hedge": 1,
+    "same_wrong_letter_neither_hedged": 220,
+    "outcomes": {
+      "abstain_to_correct": 1,
+      "correct_to_correct": 927,
+      "correct_to_wrong": 44,
+      "wrong_to_correct": 50,
+      "wrong_to_wrong": 258
+    }
+  },
+  "A-D": {
+    "n": 1280,
+    "both_valid": 1280,
+    "same_choice_or_abstain": 1164,
+    "same_wrong_letter": 238,
+    "same_wrong_letter_gained_hedge": 2,
+    "same_wrong_letter_lost_hedge": 1,
+    "same_wrong_letter_neither_hedged": 234,
+    "outcomes": {
+      "abstain_to_correct": 1,
+      "correct_to_abstain": 1,
+      "correct_to_correct": 926,
+      "correct_to_wrong": 44,
+      "wrong_to_correct": 41,
+      "wrong_to_wrong": 267
+    }
+  },
+  "A-E": {
+    "n": 1280,
+    "both_valid": 1280,
+    "same_choice_or_abstain": 1280,
+    "same_wrong_letter": 308,
+    "same_wrong_letter_gained_hedge": 297,
+    "same_wrong_letter_lost_hedge": 0,
+    "same_wrong_letter_neither_hedged": 9,
+    "outcomes": {
+      "abstain_to_abstain": 1,
+      "correct_to_correct": 971,
+      "wrong_to_wrong": 308
+    }
+  }
+}
