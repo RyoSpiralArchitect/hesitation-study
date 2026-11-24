@@ -1,0 +1,13 @@
+{
+  "item": "sociology/024",
+  "subject": "sociology",
+  "row": 24,
+  "question": "Which of the following does Bourdieu consider to be the cause of the reproduction of class?",
+  "choices": [
+    "Cult of capital",
+    "Culture of capital",
+    "Cultural capital",
+    "Criminal occupation"
+  ],
+  "gold": "C"
+}

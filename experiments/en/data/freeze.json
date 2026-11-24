@@ -1,0 +1,11 @@
+{
+  "code/translate.py": "a349d5ca3ab42092da7cac7a5674a510ed6150e0a37d5819a11b238b2408eab8",
+  "code/design.py": "67335b11e8eabfcb8e6d974a254b11dd34c871a3607709799f9ab83532b93637",
+  "protocol.md": "764af64d5810fb5e7e01a3dc50201e9d192e6b8e8703e94e51c6318c21cd3dd2",
+  "data/manifest.jsonl": "91a3cb186c56e5c9b7f6ed5a759a43021e546468157acb176d766cbf1d24bb14",
+  "created_utc": "2026-11-24T10:41:44.438632+00:00",
+  "source_sha256": "57d720aaeebe32ab98affdb4537a5d04b60d930bf87ae5ad6aa3e181de62799a",
+  "duplicate_translated_options": [
+    "sociology/024"
+  ]
+}

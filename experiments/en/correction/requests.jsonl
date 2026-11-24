@@ -1,0 +1,12 @@
+{"time":"2026-11-24T10:42:04.332581+00:00","event":"reserve","job":"sociology/024:A","usd_delta":0.0019096000000000002,"attempt":1}
+{"time":"2026-11-24T10:42:06.533791+00:00","event":"settle","job":"sociology/024:A","usd_delta":-0.0017892000000000003,"charge":0.0001204}
+{"time":"2026-11-24T10:42:06.534197+00:00","event":"reserve","job":"sociology/024:B","usd_delta":0.0019616,"attempt":1}
+{"time":"2026-11-24T10:42:07.917469+00:00","event":"settle","job":"sociology/024:B","usd_delta":-0.001826,"charge":0.0001356}
+{"time":"2026-11-24T10:42:07.917722+00:00","event":"reserve","job":"sociology/024:C","usd_delta":0.0019744000000000003,"attempt":1}
+{"time":"2026-11-24T10:42:09.204641+00:00","event":"settle","job":"sociology/024:C","usd_delta":-0.0018276000000000002,"charge":0.00014680000000000002}
+{"time":"2026-11-24T10:42:09.204930+00:00","event":"reserve","job":"sociology/024:D","usd_delta":0.001936,"attempt":1}
+{"time":"2026-11-24T10:42:10.527378+00:00","event":"settle","job":"sociology/024:D","usd_delta":-0.0017924,"charge":0.00014360000000000002}
+{"time":"2026-11-24T10:42:10.527952+00:00","event":"reserve","job":"sociology/024:E:0","usd_delta":0.0007596,"attempt":1}
+{"time":"2026-11-24T10:42:11.897200+00:00","event":"settle","job":"sociology/024:E:0","usd_delta":-0.0006932,"charge":6.64e-05}
+{"time":"2026-11-24T10:42:11.897356+00:00","event":"reserve","job":"sociology/024:E:1","usd_delta":0.0007596,"attempt":1}
+{"time":"2026-11-24T10:42:13.232633+00:00","event":"settle","job":"sociology/024:E:1","usd_delta":-0.0006932,"charge":6.64e-05}
