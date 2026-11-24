@@ -8,3 +8,10 @@ The selected source files and English adaptations are CC BY-SA 4.0.
 https://github.com/nlp-waseda/JMMLU/tree/762cbf192c9e4588b574d718f95afd64c96fcbf4
 See experiments/{ja,en}/data/LICENSE-JMMLU.txt. Treat benchmark excerpts
 in outputs, logs and reports under the same data terms.
+
+The open-response experiment samples and reformats 128 questions from
+JAQKET (Suzuki et al.), AI王 first competition development set 2.
+Development questions were commissioned from 株式会社キュービック and
+クイズ法人カプリティオ. The source questions and benchmark excerpts
+are licensed CC BY-SA 4.0: https://sites.google.com/view/project-aio/dataset
+Source: https://jaqket.s3.ap-northeast-1.amazonaws.com/data/aio_01/dev2_questions.json
