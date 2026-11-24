@@ -1,0 +1,3 @@
+# Preserve checksummed experiment inputs, source locks and CSV records across platforms.
+experiments/** -text
+*.csv whitespace=cr-at-eol
