@@ -1,6 +1,7 @@
 """Read matched pairs and reproduce the post hoc checks from the archived responses."""
 import argparse
 import csv
+import hashlib
 import json
 import random
 import runpy
@@ -29,14 +30,20 @@ def load():
     items = {}
     for language in LANGUAGES:
         folder = BASE / f"open-{language}"
-        rows[language] = {
-            (row["id"], row["model"], row["arm"]): row
-            for row in read_csv(folder / "scored.csv")
-        }
+        scored = read_csv(folder / "scored.csv")
+        rows[language] = {(row["id"], row["model"], row["arm"]): row for row in scored}
+        if len(rows[language]) != len(scored):
+            raise ValueError(f"Duplicate scored row in {language}")
         items[language] = {item["id"]: item for item in lines(folder / "items.jsonl")}
     assert list(items["ja"]) == list(items["en"])
     assert len(items["ja"]) == 128
     return rows, items
+
+
+def reading_id(kind, language, row, presentation):
+    source = [kind, language, row["id"], row["model"], row["arm"], presentation]
+    encoded = json.dumps(source, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    return f"{kind[0].upper()}-{hashlib.sha256(encoded).hexdigest()}"
 
 
 def review_cases(rows, items):
@@ -46,9 +53,11 @@ def review_cases(rows, items):
         for (item_id, model, arm), row in rows[language].items():
             utterance = row["reply"]
             normalized = unicodedata.normalize("NFKC", utterance)
-            if arm in ("openA", "openC") and (
+            screen_ac = arm in ("openA", "openC") and (
                 row["status"] == "wrong" or row["hedge"] == "1" or patterns["HEDGE"].search(normalized)
-            ):
+            )
+            screen_b = model == "mini" and arm == "openB" and row["status"] == "wrong"
+            if screen_ac or screen_b:
                 cases["hedge"].append((language, row, {"reply": utterance}))
             if model != "mini":
                 continue
@@ -72,11 +81,12 @@ def review_cases(rows, items):
     rng = random.Random(20261127)
     packets = {}
     for kind, entries in cases.items():
-        rng.shuffle(entries)
-        packets[kind] = {
-            f"{kind[0].upper()}{i:03d}": entry
-            for i, entry in enumerate(entries, start=1)
-        }
+        keyed = {reading_id(kind, *entry): entry for entry in entries}
+        if len(keyed) != len(entries):
+            raise ValueError(f"Duplicate {kind} case")
+        keys = sorted(keyed)
+        rng.shuffle(keys)
+        packets[kind] = {key: keyed[key] for key in keys}
     return packets
 
 
@@ -98,11 +108,11 @@ def describe_open_pairs(records, ids):
         "extra_flag_gained_among_both_correct": same_correct_delta.count(1),
         "extra_flag_lost_among_both_correct": same_correct_delta.count(-1),
         "extra_flag_rate_difference": interval(bootstrap_differences([extra_delta])[:, 0]),
-        "wrong_without_hedge": [
+        "frozen_wrong_without_hedge": [
             sum(row["status"] == "wrong" and row["hedge"] == "0" for row in group)
             for group in zip(*pairs)
         ],
-        "wrong_with_hedge": [
+        "frozen_wrong_with_hedge": [
             sum(row["status"] == "wrong" and row["hedge"] == "1" for row in group)
             for group in zip(*pairs)
         ],
@@ -199,6 +209,8 @@ def stance_sensitivity(rows, packets, decisions, ids):
                         for status in ("correct", "wrong"):
                             flags = marks(lang, model, arm, status)
                             counts[f"{model}/{arm}/{status}"] = {"count": sum(flags), "n": len(flags)}
+                wrong_b = marks(lang, "mini", "openB", "wrong")
+                counts["mini/openB/wrong"] = {"count": sum(wrong_b), "n": len(wrong_b)}
                 report["counts"][lang] = counts
         result[kind] = report
     return result

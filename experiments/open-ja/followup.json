@@ -65,11 +65,11 @@
         0.265625,
         10000
       ],
-      "wrong_without_hedge": [
+      "frozen_wrong_without_hedge": [
         21,
         1
       ],
-      "wrong_with_hedge": [
+      "frozen_wrong_with_hedge": [
         0,
         25
       ]
@@ -84,11 +84,11 @@
         0.328125,
         10000
       ],
-      "wrong_without_hedge": [
+      "frozen_wrong_without_hedge": [
         27,
         9
       ],
-      "wrong_with_hedge": [
+      "frozen_wrong_with_hedge": [
         0,
         15
       ]
@@ -160,8 +160,64 @@
   },
   "stance_review": {
     "hedge": {
-      "screened": 212,
+      "screened": 262,
       "corrections": [
+        {
+          "item": "QA20QBIK-0587",
+          "language": "en",
+          "model": "mini",
+          "arm": "openB",
+          "judge": 0,
+          "reading": 1
+        },
+        {
+          "item": "QA20QBIK-0345",
+          "language": "ja",
+          "model": "mini",
+          "arm": "openB",
+          "judge": 0,
+          "reading": 1
+        },
+        {
+          "item": "QA20CAPR-0255",
+          "language": "en",
+          "model": "mini",
+          "arm": "openB",
+          "judge": 0,
+          "reading": 1
+        },
+        {
+          "item": "QA20CAPR-0879",
+          "language": "en",
+          "model": "mini",
+          "arm": "openB",
+          "judge": 0,
+          "reading": 1
+        },
+        {
+          "item": "QA20CAPR-0379",
+          "language": "en",
+          "model": "mini",
+          "arm": "openB",
+          "judge": 0,
+          "reading": 1
+        },
+        {
+          "item": "QA20CAPR-0683",
+          "language": "en",
+          "model": "mini",
+          "arm": "openB",
+          "judge": 0,
+          "reading": 1
+        },
+        {
+          "item": "QA20QBIK-0417",
+          "language": "en",
+          "model": "mini",
+          "arm": "openB",
+          "judge": 0,
+          "reading": 1
+        },
         {
           "item": "QA20CAPR-0339",
           "language": "ja",
@@ -244,6 +300,10 @@
           "low/openC/wrong": {
             "count": 0,
             "n": 1
+          },
+          "mini/openB/wrong": {
+            "count": 26,
+            "n": 26
           }
         },
         "en": {
@@ -310,6 +370,10 @@
           "low/openC/wrong": {
             "count": 1,
             "n": 9
+          },
+          "mini/openB/wrong": {
+            "count": 21,
+            "n": 24
           }
         }
       }
@@ -318,47 +382,15 @@
       "screened": 24,
       "corrections": [
         {
-          "item": "QA20CAPR-0481",
+          "item": "QA20CAPR-0743",
           "language": "ja",
           "model": "mini",
-          "arm": "openF",
+          "arm": "openB",
           "judge": 0,
           "reading": 1
         },
         {
           "item": "QA20QBIK-0021",
-          "language": "ja",
-          "model": "mini",
-          "arm": "openF",
-          "judge": 0,
-          "reading": 1
-        },
-        {
-          "item": "QA20QBIK-0421",
-          "language": "ja",
-          "model": "mini",
-          "arm": "openF",
-          "judge": 1,
-          "reading": 0
-        },
-        {
-          "item": "QA20QBIK-0357",
-          "language": "ja",
-          "model": "mini",
-          "arm": "openB",
-          "judge": 1,
-          "reading": 0
-        },
-        {
-          "item": "QA20QBIK-0381",
-          "language": "en",
-          "model": "mini",
-          "arm": "openF",
-          "judge": 0,
-          "reading": 1
-        },
-        {
-          "item": "QA20CAPR-0671",
           "language": "ja",
           "model": "mini",
           "arm": "openF",
@@ -374,8 +406,16 @@
           "reading": 1
         },
         {
-          "item": "QA20QBIK-0381",
-          "language": "en",
+          "item": "QA20CAPR-0559",
+          "language": "ja",
+          "model": "mini",
+          "arm": "editF",
+          "judge": 1,
+          "reading": 0
+        },
+        {
+          "item": "QA20QBIK-0021",
+          "language": "ja",
           "model": "mini",
           "arm": "openB",
           "judge": 0,
@@ -390,10 +430,18 @@
           "reading": 1
         },
         {
-          "item": "QA20CAPR-0743",
+          "item": "QA20QBIK-0913",
           "language": "ja",
           "model": "mini",
-          "arm": "openB",
+          "arm": "editF",
+          "judge": 0,
+          "reading": 1
+        },
+        {
+          "item": "QA20QBIK-0527",
+          "language": "ja",
+          "model": "mini",
+          "arm": "editF",
           "judge": 0,
           "reading": 1
         },
@@ -406,34 +454,58 @@
           "reading": 1
         },
         {
-          "item": "QA20QBIK-0913",
-          "language": "ja",
+          "item": "QA20QBIK-0381",
+          "language": "en",
           "model": "mini",
-          "arm": "editF",
+          "arm": "openB",
           "judge": 0,
           "reading": 1
         },
         {
-          "item": "QA20CAPR-0559",
+          "item": "QA20CAPR-0671",
           "language": "ja",
           "model": "mini",
-          "arm": "editF",
+          "arm": "openF",
+          "judge": 0,
+          "reading": 1
+        },
+        {
+          "item": "QA20CAPR-0481",
+          "language": "ja",
+          "model": "mini",
+          "arm": "openF",
+          "judge": 0,
+          "reading": 1
+        },
+        {
+          "item": "QA20QBIK-0357",
+          "language": "ja",
+          "model": "mini",
+          "arm": "openB",
           "judge": 1,
           "reading": 0
-        },
-        {
-          "item": "QA20QBIK-0527",
-          "language": "ja",
-          "model": "mini",
-          "arm": "editF",
-          "judge": 0,
-          "reading": 1
         },
         {
           "item": "QA20QBIK-0839",
           "language": "ja",
           "model": "mini",
           "arm": "openB",
+          "judge": 0,
+          "reading": 1
+        },
+        {
+          "item": "QA20QBIK-0691",
+          "language": "ja",
+          "model": "mini",
+          "arm": "editF",
+          "judge": 0,
+          "reading": 1
+        },
+        {
+          "item": "QA20CAPR-0119",
+          "language": "ja",
+          "model": "mini",
+          "arm": "editF",
           "judge": 0,
           "reading": 1
         },
@@ -446,10 +518,10 @@
           "reading": 1
         },
         {
-          "item": "QA20QBIK-0021",
-          "language": "ja",
+          "item": "QA20QBIK-0381",
+          "language": "en",
           "model": "mini",
-          "arm": "openB",
+          "arm": "openF",
           "judge": 0,
           "reading": 1
         },
@@ -462,20 +534,12 @@
           "reading": 0
         },
         {
-          "item": "QA20CAPR-0119",
+          "item": "QA20QBIK-0421",
           "language": "ja",
           "model": "mini",
-          "arm": "editF",
-          "judge": 0,
-          "reading": 1
-        },
-        {
-          "item": "QA20QBIK-0691",
-          "language": "ja",
-          "model": "mini",
-          "arm": "editF",
-          "judge": 0,
-          "reading": 1
+          "arm": "openF",
+          "judge": 1,
+          "reading": 0
         },
         {
           "item": "QA20CAPR-0159",
